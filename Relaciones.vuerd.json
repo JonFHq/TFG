@@ -1,0 +1,1214 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -151,
+    "scrollLeft": -218,
+    "zoomLevel": 0.8,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": true,
+      "columnPrimaryKey": true,
+      "columnUnique": true,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "Videoclub",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "Peliculas",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "Identificador de la película",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "54894f2e-0d33-419b-8e79-75cf32c82065"
+          },
+          {
+            "name": "Título",
+            "comment": "Título de la película",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 114.734375,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "4ef54b67-a41e-4a54-b1ab-387c4671f414"
+          },
+          {
+            "name": "PEGI",
+            "comment": "",
+            "dataType": "INT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "9be79773-fe23-4c5a-b6f8-aecacc505052"
+          },
+          {
+            "name": "Sinopsis",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "94b4a0ac-9a16-4452-8668-5aaa9b5827eb"
+          },
+          {
+            "name": "ID_Nacionalidad",
+            "comment": "Identificador de la nacionalidad",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 97.392578125,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "7f029c2e-85e9-4ffe-ae99-013b73455a94"
+          },
+          {
+            "name": "Nota_IMDB",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.18994140625,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "ea8b1c7f-ac06-4443-aa1a-8a11ed5308b9"
+          },
+          {
+            "name": "Nota_Rotten_Tomatoes",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 138.58251953125,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "d5f4ca80-7f0e-44f9-a020-232f1235d10f"
+          },
+          {
+            "name": "Nota_FilmAffinity",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 100.01416015625,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "439d2348-bebc-4728-a310-7c6e810596a5"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1298.895,
+          "top": 271.8073,
+          "zIndex": 115,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "9c463d85-eeb5-46d5-b0c9-61dc7bc3bb4f"
+      },
+      {
+        "name": "Trabajadores",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "Identificador de la persona",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "31eee4b5-3cc1-4de0-8550-b3823afa3b8f"
+          },
+          {
+            "name": "Nombre",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "140b7f41-d320-44e3-8366-3f9295034a30"
+          },
+          {
+            "name": "Apellidos",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "2c8af37a-6c2d-4663-bd1b-f726f34a9cf8"
+          },
+          {
+            "name": "ID_Nacionalidad",
+            "comment": "Identificador de la nacionalidad",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 97.392578125,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ad3d042f-5d2a-4907-902e-18a8dd271f17"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 67.8262,
+          "top": 374.1602,
+          "zIndex": 28,
+          "widthName": 78.11474609375,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "ab1b2649-bdfa-46d1-9d62-e67e064ce0d4"
+      },
+      {
+        "name": "Nacionalidad",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "Identificador de la nacionalidad",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e2b8adc9-4a56-45a3-a406-5ffdb19e7f0b"
+          },
+          {
+            "name": "Pais",
+            "comment": "Nombre del pais",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 96.65625,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "7d6a4e7a-ba0d-4ce9-a6bc-d865e6400542"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 684.8065,
+          "top": 397.8445,
+          "zIndex": 39,
+          "widthName": 77.16259765625,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "cd7ceda4-d9c8-43af-b6e2-5e72dfabb7c4"
+      },
+      {
+        "name": "Actores",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "Identificador del actor",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "d26daa38-6206-4428-bd98-9d68ccfc8333"
+          },
+          {
+            "name": "ID_Persona",
+            "comment": "Identificador de la persona",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 70.64990234375,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "80256469-418e-43c9-bb28-82f12542b044"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 160.9466,
+          "top": 198.4558,
+          "zIndex": 27,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "9437c794-4edd-4ba5-b66e-bc811f90a9fa"
+      },
+      {
+        "name": "Directores",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "Identificador del director",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "71802df6-f15a-4f55-ae53-ac2497d26ed5"
+          },
+          {
+            "name": "ID_Persona",
+            "comment": "Identificador de la persona",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 70.64990234375,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "d475689a-f64a-44e9-97dd-d1425848edd7"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 158.3335,
+          "top": 624.1009,
+          "zIndex": 53,
+          "widthName": 61.236328125,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "7f90e692-c2ef-41d5-a3f1-57ae4081a970"
+      },
+      {
+        "name": "Géneros",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "Identificador del genero",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "53e56a2b-4702-4674-841f-45d8264c7fc2"
+          },
+          {
+            "name": "Genero",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "be379246-ecd1-4d78-9a9b-48dcf8859e91"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1174.7083,
+          "top": 758.759,
+          "zIndex": 121,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "4f681f43-a438-427b-a30d-f745d05e5c0e"
+      },
+      {
+        "name": "Peliculas-Generos",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID_Pelicula",
+            "comment": "Identificador de la película",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 67.75537109375,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "18bbdb13-4904-4e0a-9993-1d9108c6803b"
+          },
+          {
+            "name": "ID_Genero",
+            "comment": "Identificador del genero",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 65.5908203125,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "9e8a602a-055b-4251-b845-6ea87d2818ca"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1266.0936,
+          "top": 579.1182,
+          "zIndex": 120,
+          "widthName": 108.21533203125,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "b0dc7ed8-06bd-4957-b105-7507e0018cda"
+      },
+      {
+        "name": "Personajes",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID",
+            "comment": "Identificador del personaje",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": true,
+              "primaryKey": true,
+              "unique": true,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "50499cf2-bdb6-4233-9cd7-f68003e19ccf"
+          },
+          {
+            "name": "Nombre",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "6d9ee685-62b6-497c-8aed-5d2eac28b12b"
+          },
+          {
+            "name": "Apellidos",
+            "comment": "",
+            "dataType": "VARCHAR",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 64.6005859375,
+              "widthDefault": 60
+            },
+            "id": "51913e02-aae8-4d48-98bd-ddb6af09621d"
+          },
+          {
+            "name": "Descripción",
+            "comment": "",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 69.91357421875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "4e3500ae-ac12-4a48-b1c9-87e3ce120ca4"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 791.1195,
+          "top": 8.3901,
+          "zIndex": 81,
+          "widthName": 67.0380859375,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "4f7c5542-1e16-4a06-9b04-093c61bf0a05"
+      },
+      {
+        "name": "Caracterizacion",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID_Pelicula",
+            "comment": "Identificador de la película",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 67.75537109375,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "d5f1cc9a-735a-4d23-9069-41ee5fbbe4fa"
+          },
+          {
+            "name": "ID_Actor",
+            "comment": "Identificador del actor",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "35971f5d-ffe9-4caf-917f-406d64d44b68"
+          },
+          {
+            "name": "ID_Personaje",
+            "comment": "Identificador del personaje",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 80.76806640625,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b57cbec1-99af-4932-94d7-96eca11aec67"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 692.1734,
+          "top": 242.4825,
+          "zIndex": 89,
+          "widthName": 92.314453125,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "d7d86703-7833-409d-9a3a-de8c6171cc00"
+      },
+      {
+        "name": "Peliculas-Directores",
+        "comment": "",
+        "columns": [
+          {
+            "name": "ID_director",
+            "comment": "Identificador del director",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 65.578125,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "243e1b02-7973-4837-bac2-1e8892017174"
+          },
+          {
+            "name": "ID_pelicula",
+            "comment": "Identificador de la película",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 66.314453125,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a8cad29e-bf70-4241-aedb-6c29fc4a190e"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 731,
+          "top": 552.75,
+          "zIndex": 119,
+          "widthName": 117.5908203125,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "a7f1ff9b-cdbf-448c-bf48-0d9f2df17b72"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "cd7ceda4-d9c8-43af-b6e2-5e72dfabb7c4",
+          "columnIds": [
+            "e2b8adc9-4a56-45a3-a406-5ffdb19e7f0b"
+          ],
+          "x": 684.8065,
+          "y": 452.8445,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "ab1b2649-bdfa-46d1-9d62-e67e064ce0d4",
+          "columnIds": [
+            "ad3d042f-5d2a-4907-902e-18a8dd271f17"
+          ],
+          "x": 563.8193640625,
+          "y": 449.6602,
+          "direction": "right"
+        },
+        "constraintName": "fk_nacionalidad_to_actores",
+        "visible": true,
+        "id": "9e1d947d-479f-420c-9ad6-75a8cd7255e6"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroOne",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "ab1b2649-bdfa-46d1-9d62-e67e064ce0d4",
+          "columnIds": [
+            "31eee4b5-3cc1-4de0-8550-b3823afa3b8f"
+          ],
+          "x": 315.82278203125,
+          "y": 374.1602,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "9437c794-4edd-4ba5-b66e-bc811f90a9fa",
+          "columnIds": [
+            "80256469-418e-43c9-bb28-82f12542b044"
+          ],
+          "x": 393.271551171875,
+          "y": 308.4558,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_trabajadores_to_actores",
+        "visible": true,
+        "id": "01a4ef03-dfbb-40fc-b7a4-04001c8d3a5e"
+      },
+      {
+        "identification": false,
+        "relationshipType": "ZeroOne",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "ab1b2649-bdfa-46d1-9d62-e67e064ce0d4",
+          "columnIds": [
+            "31eee4b5-3cc1-4de0-8550-b3823afa3b8f"
+          ],
+          "x": 315.82278203125,
+          "y": 525.1602,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "7f90e692-c2ef-41d5-a3f1-57ae4081a970",
+          "columnIds": [
+            "d475689a-f64a-44e9-97dd-d1425848edd7"
+          ],
+          "x": 390.65845117187496,
+          "y": 624.1009,
+          "direction": "top"
+        },
+        "constraintName": "fk_trabajadores_to_directores",
+        "visible": true,
+        "id": "010fc700-d310-4c4b-9319-d5b0228e0177"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "cd7ceda4-d9c8-43af-b6e2-5e72dfabb7c4",
+          "columnIds": [
+            "e2b8adc9-4a56-45a3-a406-5ffdb19e7f0b"
+          ],
+          "x": 1143.4070859375001,
+          "y": 452.8445,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "9c463d85-eeb5-46d5-b0c9-61dc7bc3bb4f",
+          "columnIds": [
+            "7f029c2e-85e9-4ffe-ae99-013b73455a94"
+          ],
+          "x": 1298.895,
+          "y": 388.3073,
+          "direction": "left"
+        },
+        "constraintName": "fk_nacionalidad_to_peliculas",
+        "visible": true,
+        "id": "7e3e3112-bde9-497f-b09d-9178e15e2acf"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "9c463d85-eeb5-46d5-b0c9-61dc7bc3bb4f",
+          "columnIds": [
+            "54894f2e-0d33-419b-8e79-75cf32c82065"
+          ],
+          "x": 1567.486552734375,
+          "y": 504.8073,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "b0dc7ed8-06bd-4957-b105-7507e0018cda",
+          "columnIds": [
+            "18bbdb13-4904-4e0a-9993-1d9108c6803b"
+          ],
+          "x": 1496.971285546875,
+          "y": 579.1182,
+          "direction": "top"
+        },
+        "constraintName": "fk_peliculas_to_peliculas-generos",
+        "visible": true,
+        "id": "f07af724-cd27-43ca-a7ae-26243103bdbf"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "4f681f43-a438-427b-a30d-f745d05e5c0e",
+          "columnIds": [
+            "53e56a2b-4702-4674-841f-45d8264c7fc2"
+          ],
+          "x": 1404.00859296875,
+          "y": 758.759,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "b0dc7ed8-06bd-4957-b105-7507e0018cda",
+          "columnIds": [
+            "9e8a602a-055b-4251-b845-6ea87d2818ca"
+          ],
+          "x": 1496.971285546875,
+          "y": 689.1182,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_géneros_to_peliculas-generos",
+        "visible": true,
+        "id": "7fa7c7d1-bfd8-4cb9-a653-250b23171341"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "9c463d85-eeb5-46d5-b0c9-61dc7bc3bb4f",
+          "columnIds": [
+            "54894f2e-0d33-419b-8e79-75cf32c82065"
+          ],
+          "x": 1298.895,
+          "y": 310.6406333333333,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "d7d86703-7833-409d-9a3a-de8c6171cc00",
+          "columnIds": [
+            "d5f1cc9a-735a-4d23-9069-41ee5fbbe4fa"
+          ],
+          "x": 1166.9414664062501,
+          "y": 307.73249999999996,
+          "direction": "right"
+        },
+        "constraintName": "fk_peliculas_to_participaciones",
+        "visible": true,
+        "id": "efca3b34-7c4b-4f86-9c38-9714ac3a6665"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "9437c794-4edd-4ba5-b66e-bc811f90a9fa",
+          "columnIds": [
+            "d26daa38-6206-4428-bd98-9d68ccfc8333"
+          ],
+          "x": 625.59650234375,
+          "y": 253.4558,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "d7d86703-7833-409d-9a3a-de8c6171cc00",
+          "columnIds": [
+            "35971f5d-ffe9-4caf-917f-406d64d44b68"
+          ],
+          "x": 692.1734,
+          "y": 307.73249999999996,
+          "direction": "left"
+        },
+        "constraintName": "fk_actores_to_participaciones",
+        "visible": true,
+        "id": "21571bdf-4635-4d47-b417-03d18ad27887"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "4f7c5542-1e16-4a06-9b04-093c61bf0a05",
+          "columnIds": [
+            "50499cf2-bdb6-4233-9cd7-f68003e19ccf"
+          ],
+          "x": 1025.376580078125,
+          "y": 159.3901,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "d7d86703-7833-409d-9a3a-de8c6171cc00",
+          "columnIds": [
+            "b57cbec1-99af-4932-94d7-96eca11aec67"
+          ],
+          "x": 929.557433203125,
+          "y": 242.4825,
+          "direction": "top"
+        },
+        "constraintName": "fk_personajes_to_participaciones",
+        "visible": true,
+        "id": "c05155a6-12df-445a-b87f-5e13d0f3f6ca"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "7f90e692-c2ef-41d5-a3f1-57ae4081a970",
+          "columnIds": [
+            "71802df6-f15a-4f55-ae53-ac2497d26ed5"
+          ],
+          "x": 622.98340234375,
+          "y": 679.1009,
+          "direction": "right"
+        },
+        "end": {
+          "tableId": "a7f1ff9b-cdbf-448c-bf48-0d9f2df17b72",
+          "columnIds": [
+            "243e1b02-7973-4837-bac2-1e8892017174"
+          ],
+          "x": 731,
+          "y": 607.75,
+          "direction": "left"
+        },
+        "constraintName": "fk_directores_to_peliculas-directores",
+        "visible": true,
+        "id": "28f78475-f285-4fc3-9b32-26c3aec349ce"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "9c463d85-eeb5-46d5-b0c9-61dc7bc3bb4f",
+          "columnIds": [
+            "54894f2e-0d33-419b-8e79-75cf32c82065"
+          ],
+          "x": 1298.895,
+          "y": 465.9739666666667,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "a7f1ff9b-cdbf-448c-bf48-0d9f2df17b72",
+          "columnIds": [
+            "a8cad29e-bf70-4241-aedb-6c29fc4a190e"
+          ],
+          "x": 1191.314453125,
+          "y": 607.75,
+          "direction": "right"
+        },
+        "constraintName": "fk_peliculas_to_peliculas-directores",
+        "visible": true,
+        "id": "737d51f3-5758-41ed-a7b2-63cd0b3956da"
+      }
+    ]
+  }
+}
