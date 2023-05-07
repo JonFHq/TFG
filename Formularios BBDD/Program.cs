@@ -12,9 +12,10 @@ IConfiguration configuration = new ConfigurationBuilder()
     .AddEnvironmentVariables()
     .Build();
 
-builder.Services.AddDbContextPool<Contexto>(options => options.UseSqlServer(configuration.GetConnectionString("Prueba"), options =>
+builder.Services.AddDbContextPool<Context>(options => options.UseSqlServer(configuration.GetConnectionString("Prueba"), options =>
 {
     options.CommandTimeout(120);
+    options.EnableRetryOnFailure();
 }));
 
 var app = builder.Build();

@@ -9,41 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Formularios_BBDD
 build_property.RootNamespace = Formularios_BBDD
-build_property.ProjectDir = C:\Users\Laurita\Documents\TFG\Formularios BBDD\
+build_property.ProjectDir = D:\Documentos\TFG\TFG\Formularios BBDD\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Laurita\Documents\TFG\Formularios BBDD
+build_property.MSBuildProjectDirectory = D:\Documentos\TFG\TFG\Formularios BBDD
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Laurita/Documents/TFG/Formularios BBDD/Views/Home/Index.cshtml]
+[D:/Documentos/TFG/TFG/Formularios BBDD/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Laurita/Documents/TFG/Formularios BBDD/Views/Home/Privacy.cshtml]
+[D:/Documentos/TFG/TFG/Formularios BBDD/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Laurita/Documents/TFG/Formularios BBDD/Views/NacionalidadControlador/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFjaW9uYWxpZGFkQ29udHJvbGFkb3JcQ3JlYXRlLmNzaHRtbA==
+[D:/Documentos/TFG/TFG/Formularios BBDD/Views/Nacionalidad/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmFjaW9uYWxpZGFkXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Laurita/Documents/TFG/Formularios BBDD/Views/Shared/Error.cshtml]
+[D:/Documentos/TFG/TFG/Formularios BBDD/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Laurita/Documents/TFG/Formularios BBDD/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Documentos/TFG/TFG/Formularios BBDD/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Laurita/Documents/TFG/Formularios BBDD/Views/_ViewImports.cshtml]
+[D:/Documentos/TFG/TFG/Formularios BBDD/Views/Trabajador/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhYmFqYWRvclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Documentos/TFG/TFG/Formularios BBDD/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Laurita/Documents/TFG/Formularios BBDD/Views/_ViewStart.cshtml]
+[D:/Documentos/TFG/TFG/Formularios BBDD/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Laurita/Documents/TFG/Formularios BBDD/Views/Shared/_Layout.cshtml]
+[D:/Documentos/TFG/TFG/Formularios BBDD/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-4hm6n8m11h

@@ -10473,19 +10473,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Laurita\\.nuget\\packages\\": {}
+    "C:\\Users\\jferh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Laurita\\Documents\\TFG\\Formularios BBDD\\Formularios BBDD.csproj",
+      "projectUniqueName": "D:\\Documentos\\TFG\\TFG\\Formularios BBDD\\Formularios BBDD.csproj",
       "projectName": "Formularios BBDD",
-      "projectPath": "C:\\Users\\Laurita\\Documents\\TFG\\Formularios BBDD\\Formularios BBDD.csproj",
-      "packagesPath": "C:\\Users\\Laurita\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Laurita\\Documents\\TFG\\Formularios BBDD\\obj\\",
+      "projectPath": "D:\\Documentos\\TFG\\TFG\\Formularios BBDD\\Formularios BBDD.csproj",
+      "packagesPath": "C:\\Users\\jferh\\.nuget\\packages\\",
+      "outputPath": "D:\\Documentos\\TFG\\TFG\\Formularios BBDD\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Laurita\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jferh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
