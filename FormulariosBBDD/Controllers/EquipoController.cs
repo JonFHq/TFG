@@ -21,7 +21,8 @@ namespace FormulariosBBDD.Controllers
         // GET: Equipo
         public async Task<IActionResult> Index()
         {
-              return _context.Equipos != null ? 
+            _context.updateAll();
+            return _context.Equipos != null ? 
                           View(await _context.Equipos.ToListAsync()) :
                           Problem("Entity set 'Context.Equipos'  is null.");
         }
@@ -29,6 +30,7 @@ namespace FormulariosBBDD.Controllers
         // GET: Equipo/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            _context.updateAll();
             if (id == null || _context.Equipos == null)
             {
                 return NotFound();
@@ -47,6 +49,7 @@ namespace FormulariosBBDD.Controllers
         // GET: Equipo/Create
         public IActionResult Create()
         {
+            _context.updateAll();
             return View();
         }
 
@@ -69,6 +72,7 @@ namespace FormulariosBBDD.Controllers
         // GET: Equipo/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            _context.updateAll();
             if (id == null || _context.Equipos == null)
             {
                 return NotFound();
@@ -120,6 +124,7 @@ namespace FormulariosBBDD.Controllers
         // GET: Equipo/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+            _context.updateAll();
             if (id == null || _context.Equipos == null)
             {
                 return NotFound();

@@ -19,8 +19,6 @@ namespace FormulariosBBDD.Models
         [NotMapped]
         public bool Actor { get; set; }
         [NotMapped]
-        public bool Director { get; set; }
-        [NotMapped]
         public bool Especialista { get; set; }
         [NotMapped]
         [ValidateNever]

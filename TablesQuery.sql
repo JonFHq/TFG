@@ -51,12 +51,6 @@ CREATE TABLE [Actores] (
     CONSTRAINT [PK_Actores] PRIMARY KEY ([ID]),
     CONSTRAINT [FK_Actores_Trabajadores_ActorID] FOREIGN KEY ([ActorID]) REFERENCES [Trabajadores] ([ID]) ON DELETE CASCADE
 );
-CREATE TABLE [Directores] (
-    [ID] int NOT NULL IDENTITY,
-    [DirectorID] int NOT NULL,
-    CONSTRAINT [PK_Directores] PRIMARY KEY ([ID]),
-    CONSTRAINT [FK_Directores_Trabajadores_DirectorID] FOREIGN KEY ([DirectorID]) REFERENCES [Trabajadores] ([ID]) ON DELETE CASCADE
-);
 CREATE TABLE [GenerosPeliculas] (
     [ID] int NOT NULL IDENTITY,
     [GeneroID] int NOT NULL,
@@ -65,13 +59,13 @@ CREATE TABLE [GenerosPeliculas] (
     CONSTRAINT [FK_GenerosPeliculas_Generos_GeneroID] FOREIGN KEY ([GeneroID]) REFERENCES [Generos] ([ID]) ON DELETE CASCADE,
     CONSTRAINT [FK_GenerosPeliculas_Peliculas_PeliculaID] FOREIGN KEY ([PeliculaID]) REFERENCES [Peliculas] ([ID]) ON DELETE CASCADE
 );
-CREATE TABLE [PeliculasPersonajes] (
+CREATE TABLE [Repartos] (
     [ID] int NOT NULL IDENTITY,
     [PersonajeID] int NOT NULL,
     [PeliculaID] int NOT NULL,
-    CONSTRAINT [PK_PeliculasPersonajes] PRIMARY KEY ([ID]),
-    CONSTRAINT [FK_PeliculasPersonajes_Peliculas_PeliculaID] FOREIGN KEY ([PeliculaID]) REFERENCES [Peliculas] ([ID]) ON DELETE CASCADE,
-    CONSTRAINT [FK_PeliculasPersonajes_Personajes_PersonajeID] FOREIGN KEY ([PersonajeID]) REFERENCES [Personajes] ([ID]) ON DELETE CASCADE
+    CONSTRAINT [PK_Repartos] PRIMARY KEY ([ID]),
+    CONSTRAINT [FK_Repartos_Peliculas_PeliculaID] FOREIGN KEY ([PeliculaID]) REFERENCES [Peliculas] ([ID]) ON DELETE CASCADE,
+    CONSTRAINT [FK_Repartos_Personajes_PersonajeID] FOREIGN KEY ([PersonajeID]) REFERENCES [Personajes] ([ID]) ON DELETE CASCADE
 );
 CREATE TABLE [Caracterizaciones] (
     [ID] int NOT NULL IDENTITY,
@@ -81,14 +75,6 @@ CREATE TABLE [Caracterizaciones] (
     CONSTRAINT [FK_Caracterizaciones_Actores_ActorID] FOREIGN KEY ([ActorID]) REFERENCES [Actores] ([ID]) ON DELETE CASCADE,
     CONSTRAINT [FK_Caracterizaciones_Personajes_PersonajeID] FOREIGN KEY ([PersonajeID]) REFERENCES [Personajes] ([ID]) ON DELETE CASCADE
 );
-CREATE TABLE [Repartos] (
-    [ID] int NOT NULL IDENTITY,
-    [PeliculaID] int NOT NULL,
-    [ActorID] int NOT NULL,
-    CONSTRAINT [PK_Repartos] PRIMARY KEY ([ID]),
-    CONSTRAINT [FK_Repartos_Actores_ActorID] FOREIGN KEY ([ActorID]) REFERENCES [Actores] ([ID]) ON DELETE CASCADE,
-    CONSTRAINT [FK_Repartos_Peliculas_PeliculaID] FOREIGN KEY ([PeliculaID]) REFERENCES [Peliculas] ([ID]) ON DELETE NO ACTION
-);
 CREATE TABLE [Elencos] (
     [ID] int NOT NULL IDENTITY,
     [PeliculaID] int NOT NULL,
@@ -96,12 +82,4 @@ CREATE TABLE [Elencos] (
     CONSTRAINT [PK_Elencos] PRIMARY KEY ([ID]),
     CONSTRAINT [FK_Elencos_Especialistas_EspecialistaID] FOREIGN KEY ([EspecialistaID]) REFERENCES [Especialistas] ([ID]) ON DELETE CASCADE,
     CONSTRAINT [FK_Elencos_Peliculas_PeliculaID] FOREIGN KEY ([PeliculaID]) REFERENCES [Peliculas] ([ID]) ON DELETE NO ACTION
-);
-CREATE TABLE [DirectoresPeliculas] (
-    [ID] int NOT NULL IDENTITY,
-    [PeliculaID] int NOT NULL,
-    [DirectorID] int NOT NULL,
-    CONSTRAINT [PK_DirectoresPeliculas] PRIMARY KEY ([ID]),
-    CONSTRAINT [FK_DirectoresPeliculas_Directores_DirectorID] FOREIGN KEY ([DirectorID]) REFERENCES [Directores] ([ID]) ON DELETE CASCADE,
-    CONSTRAINT [FK_DirectoresPeliculas_Peliculas_PeliculaID] FOREIGN KEY ([PeliculaID]) REFERENCES [Peliculas] ([ID]) ON DELETE NO ACTION
 );

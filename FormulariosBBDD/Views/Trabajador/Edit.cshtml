@@ -4,6 +4,32 @@
     ViewData["Title"] = "Edit";
 }
 
+<script>
+    
+    function OnEspecialistaCheck() {
+        var checkbox = document.querySelector("input[id='Especialista']");
+        var select = document.querySelector("select[id='Equipo']");
+
+        if (checkbox.checked) {
+            select.removeAttribute("disabled");
+        }
+        else {
+            select.disabled = true;
+        }
+    }
+    window.onload = function () {
+        var checkbox = document.querySelector("input[id='Especialista']");
+        var select = document.querySelector("select[id='Equipo']");
+
+        if (checkbox.checked) {
+            select.removeAttribute("disabled");
+        }
+        else {
+            select.disabled = true;
+        }
+    };
+</script>
+
 <h1>Edit</h1>
 
 <h4>TrabajadorModel</h4>
@@ -31,13 +57,8 @@
             </div>
 
             <div class="form-group">
-                <label asp-for="Director" class="control-label"></label>
-                <input type="checkbox" asp-for="Director" class="form-check" />
-            </div>
-
-            <div class="form-group">
                 <label asp-for="Especialista" class="control-label"></label>
-                <input id="Especialista" type="checkbox" asp-for="Especialista" class="form-check" onclick="OnEspecialistaCheck()" />
+                <input id="Especialista" type="checkbox" asp-for="Especialista" class="form-check" on onclick="OnEspecialistaCheck()" />
 
                 <label asp-for="Equipos" class="control-label"></label>
                 <select multiple id="Equipo" disabled="true" asp-for="Equipos" class="form-control" asp-items="ViewBag.EquipoID"></select>

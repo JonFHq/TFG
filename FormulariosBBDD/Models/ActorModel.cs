@@ -11,7 +11,6 @@ namespace FormulariosBBDD.Models
         public TrabajadorModel Actor { get; set; }
         public int ActorID { get; set; }
         // Relaciones Muchos a Muchos
-        public List<RepartoModel> Repartos { get; set; }
         public List<CaracterizacionModel> Caracterizaciones { get; set; }
     }
 }

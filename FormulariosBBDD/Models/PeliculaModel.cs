@@ -15,7 +15,6 @@ namespace FormulariosBBDD.Models
         public DateTime Estreno { get; set; }
         [Required]
         public TimeSpan Duracion { get; set; }
-        [Required]
         public NacionalidadModel Pais { get; set; }
         public int PaisID { get; set; }
         public float Nota { get; set; }
@@ -27,10 +26,8 @@ namespace FormulariosBBDD.Models
         public string Trailer { get; set; }        
 
         // Relaciones Muchos a Muchos
-        public List<RepartoModel> Repartos { get; set; }
-        public List<PeliculasPersonajesModel> PeliculasPersonajes { get; set; }
+        public List<RepartoModel> PeliculasPersonajes { get; set; }
         public List<GenerosPeliculasModel> GenerosPeliculas { get; set; }
-        public List<DirectoresPeliculasModel> DirectoresPeliculas { get; set; }
         public List<ElencoModel> Elencos { get; set; }
     }
 }

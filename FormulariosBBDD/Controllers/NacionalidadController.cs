@@ -21,7 +21,8 @@ namespace FormulariosBBDD.Controllers
         // GET: Nacionalidad
         public async Task<IActionResult> Index()
         {
-              return _context.Nacionalidades != null ? 
+            _context.updateAll();
+            return _context.Nacionalidades != null ? 
                           View(await _context.Nacionalidades.ToListAsync()) :
                           Problem("Entity set 'Context.Nacionalidades'  is null.");
         }
@@ -29,6 +30,7 @@ namespace FormulariosBBDD.Controllers
         // GET: Nacionalidad/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            _context.updateAll();
             if (id == null || _context.Nacionalidades == null)
             {
                 return NotFound();
@@ -59,7 +61,8 @@ namespace FormulariosBBDD.Controllers
         {
             if (ModelState.IsValid)
             {
-                _context.Add(nacionalidadModel);
+                _context.Nacionalidades.Add(nacionalidadModel);
+                _context.Database.EnsureCreated();
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
@@ -69,6 +72,7 @@ namespace FormulariosBBDD.Controllers
         // GET: Nacionalidad/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            _context.updateAll();
             if (id == null || _context.Nacionalidades == null)
             {
                 return NotFound();
@@ -81,6 +85,8 @@ namespace FormulariosBBDD.Controllers
             }
             return View(nacionalidadModel);
         }
+
+        
 
         // POST: Nacionalidad/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
@@ -120,6 +126,7 @@ namespace FormulariosBBDD.Controllers
         // GET: Nacionalidad/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+            _context.updateAll();
             if (id == null || _context.Nacionalidades == null)
             {
                 return NotFound();

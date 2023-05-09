@@ -12,11 +12,15 @@ IConfiguration configuration = new ConfigurationBuilder()
     .AddEnvironmentVariables()
     .Build();
 
-builder.Services.AddDbContextPool<Context>(options => options.UseSqlServer(configuration.GetConnectionString("Prueba"), options =>
+builder.Services.AddDbContextPool<Context>(options =>
 {
-    options.CommandTimeout(120);
-    options.EnableRetryOnFailure();
-}));
+    options.UseSqlServer(configuration.GetConnectionString("Prueba"), options =>
+    {
+        options.CommandTimeout(120);
+        options.EnableRetryOnFailure();
+    });
+    options.EnableSensitiveDataLogging();
+});
 
 var app = builder.Build();
 

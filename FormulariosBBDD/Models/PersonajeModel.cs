@@ -11,7 +11,7 @@ namespace FormulariosBBDD.Models
         public string Nombre { get; set; }
         [DataType(DataType.Text)]
         public string Descripcion { get; set; }
-        public List<PeliculasPersonajesModel> PeliculasPersonajes { get; set; }
+        public List<RepartoModel> PeliculasPersonajes { get; set; }
         public List<CaracterizacionModel> Caracterizaciones { get; set; }
     }
 }
