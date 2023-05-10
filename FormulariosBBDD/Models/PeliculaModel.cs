@@ -23,7 +23,7 @@ namespace FormulariosBBDD.Models
         [DataType(DataType.ImageUrl)]
         public string Cartel { get; set; }
         [DataType(DataType.Url)]
-        public string Trailer { get; set; }        
+        public string Trailer { get; set; }
 
         // Relaciones Muchos a Muchos
         public List<RepartoModel> PeliculasPersonajes { get; set; }

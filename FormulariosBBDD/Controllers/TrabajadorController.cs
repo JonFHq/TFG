@@ -22,7 +22,7 @@ namespace FormulariosBBDD.Controllers
         // GET: Trabajador
         public async Task<IActionResult> Index()
         {
-            _context.updateAll();
+            //_context.updateAll();
             var context = _context.Trabajadores.Include(t => t.Nacionalidad);
             return View(await context.ToListAsync());
         }
