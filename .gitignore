@@ -452,3 +452,5 @@ FodyWeavers.xsd
 *.app
 
 # End of Ignore C
+
+obj
